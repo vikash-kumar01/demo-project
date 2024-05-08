@@ -1,4 +1,4 @@
-FROM  centos:latest
+FROM  centos:8
 MAINTAINER vikashashoke@gmail.com
 RUN yum install -y httpd \
  zip\
@@ -12,7 +12,7 @@ CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
  
  
-# FROM  centos:latest
+# FROM  centos:8
 # MAINTAINER vikashashoke@gmail.com
 # RUN yum install -y httpd \
 #  zip\
